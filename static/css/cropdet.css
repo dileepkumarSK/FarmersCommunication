@@ -1,0 +1,21 @@
+.reg-table{
+   margin:auto;
+   margin-left: 250px;
+   margin-top: 30px;
+    border: 3px black solid;
+    width: fit-content;
+    padding: 15px;
+    background-color: cadetblue;
+
+}
+.reg-table table td{
+    padding: 10px 30px 20px 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: black;
+    border-bottom: 1px solid black;
+    
+}
+.reg-table table td h3{
+    text-align: center;
+}
+

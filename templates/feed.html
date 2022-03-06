@@ -1,0 +1,52 @@
+{% load static %}
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>account</title>
+
+
+    <link rel="stylesheet" type="text/css" href=" {% static '/css/accounts.css' %} ">
+    <link rel="stylesheet" href="{% static 'css/homepagep.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/share.css' %}" />
+</head>
+
+<body>
+
+
+    {% block content %}
+    {% include 'navhome.html' %}
+    <div class="grid-account">
+
+        {% include 'accountnav.html' %}
+        <div class="acedih">
+            <div class="acedi2">
+                <table class="tablefeed">
+                    <form action="share" method="POST">
+                        {% csrf_token %}
+                        <tr><td> Your Feedback is very important to us </td></tr>
+                        <tr>
+                            <td class="tabletd1"> <textarea cols="50" rows="5" name="sharee" class="sharetext"></textarea><br /></td>
+                        </tr>
+                        <tr>
+                            <td class="tabletd2"><input type="submit" value="submit" class="sharebtn" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 <a href="mailto:nanidileepy@mail.com">
+                                    <img src='/static/imgs/download.png' width="20px" height="20px" class="imgfeed" /></a>
+                        </tr>
+
+
+                    </form>
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+
+    {% endblock %}
+
+</body>
+
+</html>

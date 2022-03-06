@@ -1,0 +1,12 @@
+ 
+ .detcsecm{
+    border:5px solid yellow;
+    overflow:hidden;
+    padding:50px;
+}
+ 
+.detcsec{
+    float:left;
+    width:33.33%;
+
+}

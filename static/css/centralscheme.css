@@ -1,0 +1,16 @@
+*{
+    overflow: hidden;
+}
+.schmes{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+}
+
+
+.table-central{
+    padding: 5px;
+}
+table th, td{
+ padding: 3px;
+ 
+}

@@ -1,0 +1,24 @@
+.reg-table{
+    margin-top: 100px;
+    margin-left: 250px;
+    border: 3px black solid;
+    width: fit-content;
+    padding: 15px;
+    background-color: cadetblue;
+}
+.succ{
+    border: 1px solid darkgrey;
+    width: fit-content;
+    padding: 5px;
+}
+.regsub{
+    text-align: center;
+   
+    
+    padding: 5px;
+}
+.regsub input{
+    border: 1px solid rgb(57, 139, 139);
+    padding: 5px;
+    border-radius: 5px;
+}

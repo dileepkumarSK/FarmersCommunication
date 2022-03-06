@@ -1,0 +1,46 @@
+{% load crispy_forms_tags %}
+{% load static %}
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>account</title>
+
+
+    <link rel="stylesheet" type="text/css" href=" {% static '/css/accounts.css' %} ">
+    <link rel="stylesheet" href="{% static 'css/homepagep.css' %}" />
+
+</head>
+
+<body>
+
+
+    {% block content %}
+    {% include 'navhome.html' %}
+    <div class="grid-account">
+
+        {% include 'accountnav.html' %}
+        <div class="acedih">
+            <div class="acedi2">
+                
+                <form action="editperinfo"  method="POST">
+                    {% csrf_token %}
+                    {{form|crispy}}
+                    
+                </form>
+                
+                <p class="subedit"><input type="submit" value=Update name="submit"></p>
+                 
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+
+    {% endblock %}
+
+</body>
+
+</html>

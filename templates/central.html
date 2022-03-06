@@ -1,0 +1,68 @@
+
+{% load static  %}
+
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/homepagep.css' %}"/>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/centralscheme.css' %}"/>
+       
+    </head>
+<body>
+   <section> {% include 'navhome.html' %}</section>
+    {% block content %}
+  <br> <section>
+<div class=schmes>
+    <div>
+    <img src="/static/imgs/adcentral.jpg" alt="">
+    </div>
+    <div>
+        <table class="table-central">
+            <tr><th>CENTERAL SCHEMES</th>
+          
+          <tr><td>
+              <a href="https://agriinfra.dac.gov.in/">
+            Agriculture Infrastructure Fund </a>
+          <tr><td>
+             <a href="https://www.pnbindia.in/downloadprocess.aspx?fid=iSPSezIbJWbWuBc66zemDg=="> A pan India Central Sector Scheme providing debt financing facility for investment in Agri infrastructure
+            </a>
+           <tr><td>Credit facility for farmers 
+           <tr><td>Provides information related to institutional credit available for farmers.
+    
+           <tr><td>Crop insurance schemes 
+           <tr><td>Scheme to safeguard farmers from financial loss occurring due to non-preventable natural risks.
+    
+           <tr><td>Interest subvention for dairy sector 
+           <tr><td>Interest subvention on Working Capital Loans for Dairy sector due to lockdown
+    
+            <tr><td>KCC for animal husbandry and fisheries 
+            <tr><td>Provides information about Kisan Credit Card for animal husbandry and fisheries farmers.
+    
+            <tr><td>National Mission on Edible Oils 
+            <tr><td>Provides information about National Mission on Edible Oils – Oil Palm.
+    
+            <tr><td>National Scheme of Welfare of Fishermen 
+            <tr><td>This page provides information about the National Scheme of Welfare of Fishermen, a centrally sponsored scheme aiming to provide financial assistance to fishers for construction of houses.
+    
+             <tr><td>PM Kisan Maan Dhan Yojana 
+             <tr><td>Scheme to provide social security to Small and Marginal Farmers in their old age
+    
+            <tr><td>Pradhan Mantri Kisan Samman Nidhi 
+            <tr><td>Income support scheme for all farmers.
+    
+            <tr><td>Pradhan Mantri Krishi Sinchai Yojana 
+             <tr><td>Scheme to ensure access to protective irrigation to all agricultural farms in the country
+    
+            </table>
+    
+    </div>
+
+
+
+</div>
+
+</section>
+
+ {% endblock %}
+</body>
+</html>

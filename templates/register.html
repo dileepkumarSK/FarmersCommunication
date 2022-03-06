@@ -1,0 +1,51 @@
+{% load static %}
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="{% static 'css/homepagep.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/register.css' %}" />
+</head>
+
+<body>
+    {% include 'navhome.html' %}
+    {% block content %}
+
+
+    <div class="reg-table">
+
+
+        <form action='register' class="formregister" method="POST">
+            {% csrf_token %}
+
+            <table>
+                {{reg.as_table}}
+            <tr>
+                <td class="regsub" colspan="2"><input type="submit" value="Register"><td><a href=""></a></td></td>
+            </tr>
+            {% if messages %}
+            {% for m in messages %}
+        <div class="msg"><tr><td class="msg">{{m}}</td></tr></div>
+             {% endfor %}
+             {% endif %}
+
+        </table>
+            <p class="succ">
+
+                {% for mes in messages %}
+                {{mes}}
+                {%endfor%}
+
+
+
+
+
+        </form>
+
+    </div>
+
+    {% endblock %}
+
+</body>
+
+</html>

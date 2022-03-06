@@ -1,0 +1,88 @@
+﻿
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+body {
+    background-image: url("/static/imgs/signin.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.title{
+    text-align:center;
+    background-color:seagreen;
+    margin-left:auto;
+    padding:10px;
+        
+    
+}
+.formtable{
+    color: white;
+    
+    border:5px hidden;
+    padding:40px;
+    font-display:block;
+   
+    position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+td {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 125px;
+    height: 25px;
+}
+#buton{
+    border:4px solid black;
+    background-color:brown;
+    padding:5px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.divp p{
+    text-align: center;
+   margin-left: 50%;
+   
+ 
+   margin: auto;
+    color: greenyellow;
+}
+.divp p::after{
+    width:0%;
+    transition:0.5s;
+    margin:auto;
+    display:block;
+    content:'';
+    background-color:brown;
+    height:2px;
+}
+.divp p:hover::after{
+    width: 10%;
+    text-shadow: 10px;
+}
+
+#pps{
+    
+    color: rgb(206, 17, 17);
+    margin: auto;
+    
+    
+}
+.divp p a{
+    text-decoration: none;
+    background-color:seagreen ;
+    width: fit-content;
+    border-radius: 3px;
+    padding: 5px;
+    border: 3px solid darkgrey;
+}
+
+.msg td{
+    border: 2px solid rgb(69, 143, 228);
+    text-align: center;
+    width: fit-content;
+    padding: 2px;
+    
+}  

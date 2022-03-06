@@ -1,0 +1,29 @@
+.feedgrid{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    float: left;
+    overflow: hidden;
+}
+
+.detallusers{
+    margin-left: 25px;
+    padding: 5px;
+    text-align: center;
+
+}
+ textarea{
+    color: rgb(28, 161, 28);
+}
+.fedd{
+    border: 3px solid rgba(34, 12, 22, 0);
+    border-radius: 3px;
+}
+
+.fedentry{
+    padding: 10px;
+    margin: 5px;
+}
+.fedentry td{
+    padding: 10px;
+
+}

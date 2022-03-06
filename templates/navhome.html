@@ -1,0 +1,45 @@
+<nav class="nav-home-page">
+
+    <ul>
+
+        <li><a href="{% url 'homepagep'%}">HOME</a></li>
+        <li><a href="#">ABOUT YOUR CROP</a></li>
+
+        <li>
+            <a href="#">GOVT SCHEMS</a>
+            <div class="pgvt-schemes">
+
+                <ul>
+                    <li><a href="{% url 'central'%}">CENTRAL</a></li>
+                    <li><a href="#">STATE</a></li>
+                    <li><a href="#">APPLY</a></li>
+                </ul>
+
+
+            </div>
+        </li>
+        <li><a class="active" href="https://agmarknet.gov.in/">MARKET PRICE</a></li>
+        <li><a href="{% url 'register'%}">REGISTER</a></li>
+        <li><a href="https://www.accuweather.com/en/in/india-weather">WEATHER REPORT</a></li>
+        <li><a href="{% url 'cropdet'%}">CROP DETALIS</a></li>
+        <li>
+            <a href="#">E BUSINESS</a>
+            <div class="pgvt-schemes">
+
+                <ul>
+                    <li><a href= "{% url 'seller'%}"> SELLER</a></li>
+                    <li><a href= "{% url 'buyer'%}">BUYER</a></li>
+                    <li><a href= "{% url 'machineary'%}">MACHINERY</a></li>
+                </ul>
+
+
+            </div>
+        </li>
+        <li>
+            <a href="{% url 'account' %}">ACCOUNT</a>
+           
+        </li>
+
+
+    </ul>
+</nav>

@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <link rel="stylesheet" href="{% static 'css/homepagep.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/cropdet.css' %}" />
+  <title>CROPDETAILS</title>
+</head>
+
+<body>
+  {% include 'navhome.html' %}
+  {% block content %}
+   
+  <div class="reg-table">
+    <table>
+      <tr><td colspan="2"><h3>Registerd details</h3> </td></tr>
+      <tr>
+        <td>Gender</td><td>{{user.register.gender }}</td>
+      </tr>
+      <tr>
+        <td>State</td>
+        <td>{{user.register.state }}</td>
+      </tr>
+      <tr>
+        <td>Crop</td>
+        <td>{{user.register.cropdet }}</td>
+      </tr>
+      <tr>
+        <td>Total-land</td>
+        <td>{{user.register.toatalLAnd }}</td>
+      </tr>
+      <tr>
+        <td>Adress</td>
+        <td>{{user.register.adress }}</td>
+      </tr>
+      <tr>
+        <td>birthdate</td>
+        <td>{{user.register.birthdate }}</td>
+      </tr>
+     <tr><td colspan="2"><a href="">Edit</a></td></tr>
+    </table>
+  </div>
+
+
+
+
+
+  {% endblock %}
+</body>
+
+</html>

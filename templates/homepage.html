@@ -1,0 +1,81 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>farmer'sCommunication</title>
+    <link rel="stylesheet" href="{% static 'css/homepage.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/imagehome.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/footerhomecss' %}" />
+    <img src="{% static 'imgs/headpic.png' %}" alt="headpic" class="head" />
+    <script src="{% static 'js/imagehome.js' %}"></script>
+
+
+</head>
+<html lang="en">
+
+<body>
+    {% include 'navbar.html' %}
+    {% block content %}
+  
+
+    
+    <div class="home-grids">
+
+        <div class="home-col">
+            <div class="home-notifications">
+                <p class="not">Notifications</p>
+                <marquee behavior="scroll" direction="up" scrollamount="1">
+                    <p><a href="">Updates From the Agriculture and Food Sectors</a></p> <br>
+                    <p>
+                      <a href="">Government Prohibits the Use of Streptomycin & Tetracycline on Crops</a></p><br>
+                    <p><a href="">Modi backs down after year-long farmer protests</a></p><br>
+                    <p><a href="">TN Farmer’s Daughter Receives Rs 3 Crore US Scholarship For Bachelors Study</a></p><br>
+              
+              
+              
+                  </marquee>
+                <div>
+                    <table>
+                        <th class="articles">Articles</th>
+                        <tr>
+                            <td>fsgrgtsdf</td>
+                        </tr>
+                        <tr>
+                            <td>gfdgdfg</td>
+                        </tr>
+                        <tr>
+                            <td>fdgdfg</td>
+                        </tr>
+                        <tr>
+                            <td>fgfdgdrgtter</td>
+                        </tr>
+                        <tr>
+                            <td>sreewtetr</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="home-col">
+            
+            {% include 'imagehome.html' %}
+        </div>
+        
+
+    </div>
+
+    <div>
+        <footer>
+        {%  include 'footerhome.html' %}
+    </footer>
+    </div>
+
+    {% endblock %}
+
+</body>
+
+</html>

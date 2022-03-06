@@ -1,0 +1,207 @@
+﻿html {
+    overflow-y: scroll;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.head {
+    margin-top: 0px;
+    width: 100%;
+    height: 130px;
+    border: 5px hidden;
+    padding: 0px;
+}
+
+body {
+    background-image: url("/static/imgs/bgimg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    backface-visibility: hidden;
+}
+
+header {
+    overflow: hidden;
+}
+
+.nav-every-page {
+    max-width: 100%;
+    height: 30px;
+    background-color: cadetblue;
+    border-radius: 10px;
+}
+
+.nav-every-page ul {
+    float: left;
+    overflow: hidden;
+    padding: 8px;
+}
+
+.nav-every-page ul li {
+    display: inline-block;
+    margin-left: 55px;
+    list-style-type: none;
+}
+
+.nav-every-page ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-every-page ul li a:active {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-every-page ul li::after {
+    width: 0%;
+    transition: 0.5s;
+    margin: auto;
+    display: block;
+    content: '';
+    background-color: brown;
+    height: 2px;
+}
+
+.nav-every-page ul li:hover::after {
+    width: 100%;
+}
+
+.nav-every-page ul li:hover:active {
+    transition: none;
+    width: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.divlog {
+    margin-top: 100px;
+    width: 35%;
+    height: max-content;
+    margin-left: 35%;
+    text-align: center;
+}
+
+fieldset {
+    margin: 5px;
+}
+
+legend {
+    text-align: left;
+    color: brown;
+    background-color: rgb(217, 139, 228);
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+main section form {
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+}
+
+#logbuton {
+    width: 35%;
+    background-color: darkolivegreen;
+    color: white;
+    padding: 1px;
+}
+
+.aboutgird {
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-template-columns: 4fr 2fr;
+    margin: auto;
+    float: left;
+}
+
+.ab1 {
+    margin-top: 15px;
+}
+
+.matter {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 19px;
+    margin-top: 100px;
+    margin-left: 0;
+    padding-top: 20px;
+    padding-left: 15px;
+    margin-bottom: 220px;
+    border-width: 5px;
+    border-radius: 5px;
+    border: 4px solid greenyellow;
+    justify-content: center;
+}
+
+.detcsecm {
+    border: 5px solid yellow;
+    overflow: hidden;
+    padding: 50px;
+}
+
+.detcsec {
+    float: left;
+    width: 33.33%;
+}
+
+.divsh {
+    text-align: center;
+}
+
+.home-grids-row {
+    display: grid;
+    margin-top: 5px;
+    grid-row-gap: 5px;
+}
+
+.home-grids {
+    display: grid;
+    margin-top: 20px;
+    grid-row-gap: 5px;
+    grid-template-columns: 1fr 4fr;
+}
+
+.home-col {
+    border-right: 2px solid black;
+    margin-left: 5px;
+}
+
+.notification {
+    border: 2px solid green;
+    background-color: yellowgreen;
+    padding: 5px;
+    margin-right: 50px;
+}
+
+.articles {
+    border: 2px solid green;
+    background-color: yellowgreen;
+    padding: 5px;
+    margin: 2px;
+}
+
+.not {
+    border: 1px solid black;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(29, 34, 25);
+    color: white;
+    text-align: center;
+}
+
+.feed {
+    border: solid;
+}

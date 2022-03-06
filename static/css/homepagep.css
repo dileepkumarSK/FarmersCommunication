@@ -1,0 +1,174 @@
+html { overflow-y: scroll; }
+*{
+
+    padding:0;
+    margin:0;
+}
+.head {
+    margin-top: 0px;
+    width: 100%;
+    height: 130px;
+    border: 5px hidden;
+    padding: 0;
+}
+
+body {
+    background-color: #4c7891;
+    background-image: url("/static/imgs/bgimg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    backface-visibility: hidden;
+}
+
+header {
+    overflow: hidden;
+}
+
+nav{
+    margin-bottom: 0!important;
+    
+}
+.nav-home-page{
+    border: 5px;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(67, 169, 216);
+    border-radius: 10px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.nav-home-page ul{
+   
+    float:left;
+    overflow: hidden;
+    padding: 8px;
+    display: inline-flex;
+    list-style: none;
+    
+    
+   
+}
+.nav-home-page ul li{
+    display:block;
+    margin-left: 27px;
+    list-style-type:none;
+    
+     
+    
+ }
+
+
+ 
+.img-home{
+    border: 1px hidden black;
+    text-align: center;
+}
+
+
+
+.nav-home-page ul li a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    text-align:center; 
+    padding: 1px 1px;
+}
+
+.nav-home-page ul li::after{
+      width:0%;
+      transition:0.5s;
+      margin:auto;
+      display:block;
+      content:'';
+      background-color:brown;
+      height:2px;
+      
+
+  }
+  .nav-home-page ul li:hover::after{
+        width:100%;
+        float: none;
+    
+    }
+.nav-home-page ul li:hover:active {
+    transition:none;
+    width: auto;
+}
+.pgvt-schemes{
+    display:none ;
+    
+}
+
+
+.nav-home-page ul li:hover .pgvt-schemes {
+    display: block;
+    position: absolute;
+    background-color:violet;
+    float: left;
+  
+}
+.nav-home-page ul li:hover .pgvt-schemes ul{
+    display:block;
+    margin: 1px;
+    
+}
+.nav-home-page ul li:hover .pgvt-schemes ul li{
+    width: 150px;
+    padding: 10px;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+
+}
+.nav-home-page ul li:hover .pgvt-schemes ul li a{
+    padding: 1px 1px;
+}
+.nav-home-page ul li:hover .pgvt-schemes ul li a:hover{
+    width: 100%;
+    float: none;
+    padding: 1px 1px;
+    
+}
+
+/*grids*/
+.gridshomerow{
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr;
+    grid-gap: 1px;
+}
+.warnings{
+    
+    border-radius: 5px;
+    margin: 5px;
+}
+.news{
+     overflow: hidden;
+}
+.news h3{
+    text-align: center;
+    background-color: green;
+}
+.homeimg{
+    border: 1px solid green;
+    margin-bottom: 2px;
+}
+.col-col{
+    border: 3px solid rgb(162, 243, 10);
+}
+.col-col h4{
+    padding: 2px;
+    border: 3px;
+    border-radius: 4px;
+    margin: 1px;
+    text-align: center;
+    background-color: lightgreen;
+}
+
+.center_grid{
+    color: rgb(231, 238, 237);
+    text-size-adjust: 25px;
+    
+    background-color: darkslategray;
+}

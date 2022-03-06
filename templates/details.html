@@ -1,0 +1,64 @@
+{% extends 'homepage.html' %}
+{% load static  %}
+<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <title>deatils</title>
+    
+</head>
+<body>
+    {% block content %}
+        <table class="tb">
+            <thead>
+                <tr>
+                    <td>
+                        S. No
+                    </td>
+                    <td>Cropping Season</td>
+                    <td>Time Period</td>
+                    <td>Crops</td>
+                    <td>States</td>
+            </thead>
+            <tr>
+                <td>1.</td>
+                <td>Rabi</td>
+                <td>
+                    Sown: October-December
+                    Harvested: April-June
+                </td>
+                <td>Wheat, barley, peas, gram, mustard etc.</td>
+                <td>Punjab, Haryana, Himachal Pradesh, Jammu and Kashmir, Uttarakhand and Uttar Pradesh</td>
+             <tr>
+                <td>2.</td>
+                <td>Kharif</td>
+                <td>
+                    Sown: June-July
+                    Harvested: September-October
+                </td>
+                <td>Rice, maize, jowar, bajra, tur, moong, urad, cotton, jute, groundnut, soybean etc.</td>
+                <td>Assam, West Bengal, coastal regions of Odisha, Andhra Pradesh, Telangana, Tamil Nadu, Kerala and Maharashtra</td>
+             <tr>
+                 <td>3.</td>
+                 <td>Zaid</td>
+                 <td>
+                     Sown and harvested: March-July
+                     (between Rabi and Kharif)
+                 </td>
+                 <td>Seasonal fruits, vegetables, fodder crops etc</td>
+                 <td>Most of the northern and northwestern states</td>
+                 
+
+
+
+
+
+
+</table>
+        <br />
+        <a href="http://mospi.nic.in/agriculture-statistics">you can see the more information </a>
+    </main>
+    {% endblock %}
+</body>
+</html>

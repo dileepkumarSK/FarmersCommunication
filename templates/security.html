@@ -1,0 +1,45 @@
+{% load static %}
+{% load crispy_forms_tags %}
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>account</title>
+
+
+    <link rel="stylesheet" type="text/css" href=" {% static '/css/accounts.css' %} ">
+    <link rel="stylesheet" href="{% static 'css/homepagep.css' %}" />
+
+</head>
+
+<body>
+
+
+    {% block content %}
+    {% include 'navhome.html' %}
+    <div class="grid-account">
+
+        {% include 'accountnav.html' %}
+        <div class="acedih">
+            <div class="acedi2">
+
+                <form action="security" method="POST" novalidate>
+
+                    {% csrf_token %}
+
+                    {{fm|crispy}}
+                    <p class="subsec"><input type="submit" value="save"></p>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    {% endblock %}
+
+</body>
+
+</html>

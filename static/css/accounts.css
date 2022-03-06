@@ -1,0 +1,130 @@
+.acount-navigation{
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 3px rebeccapurple solid;
+    margin-top: 60px;
+    border-radius: 10px;
+    background-color: rosybrown;
+    position: fixed; 
+    
+    
+    
+}
+.account-ul{
+    margin: 5px;
+    padding: 15px;
+    color: white;
+    
+    
+    
+}
+.account-ul li{
+    margin: 5px;
+}
+.li-account{
+    margin: 1px;
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 0 5px 0 5px;
+    text-align: center;
+   
+}
+.li-account :hover{
+    background-color: forestgreen;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr ;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+   padding: 20px;
+    
+  }
+
+
+    
+.acount-navigation ul ,a {
+    text-decoration: none;list-style-type: none;
+
+}
+.edit-proifle{
+    margin: 15px ;
+    margin-left: 30px;
+}
+.acedih{
+    margin-left: 20px;
+    margin-top: 25px;
+     padding: 25px;
+     
+}
+.acedi{
+    margin-left: 20px;
+    margin-top: 25px;
+     padding: 25px;
+     
+     
+}
+.acedi2{
+    border-left: solid 2px darkslategray;
+    border-bottom: solid 2px darkslategray;
+    padding: 40px;
+    width: fit-content;
+}
+.tableEdit td{
+    padding: 10px;
+}
+.subedit{
+    margin-left: 50px;
+    margin-top: 40px;
+}
+.subedit input{
+    padding: 2px;
+    border-radius: 2px;
+}
+.subsec{
+    margin-left: 40px;
+    margin-top: 30px;
+    
+}
+.subsec input{
+    padding: 2px;
+    border: 1px solid floralwhite;
+    border-radius: 3px;
+}
+.tablefeed td{
+    padding: 5px;
+    
+}
+.tabletd1 textarea{
+    color: rgb(10, 10, 10);
+    border-radius: 0 5px 0 5px;
+    background-color: rgb(192, 231, 241);
+
+}
+.tabletd2 input{
+    text-align: center;
+    padding: 4px;
+    margin: 3px;
+    border-radius: 5px 0 ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.imgfeed{
+    border: 1px solid black;
+ 
+}
+.tableEdittda{
+    color: black;
+    border: 3px solid black;
+    padding: 2px 8px 2px 8px;
+    border-radius: 3px 0 3px 0;
+    background-color: rgb(146, 148, 252);
+
+
+}
+.edit-buuton-td{
+    
+    text-align: center;
+}

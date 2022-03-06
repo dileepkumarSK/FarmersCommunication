@@ -1,0 +1,36 @@
+{% load crispy_forms_tags %}
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>farmer'sCommunication</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/homepagep.css' %}" />
+  
+  <link rel="icon" type="image/x-icon" href="{% static 'img/favicon.ico'  %}">
+</head>
+
+<body>
+  {% block content %}
+  <section>{% include 'navhome.html' %}
+  </section>
+  
+  <section>
+    {%  include 'homeerson.html'  %}
+  </section>
+  
+  
+  {% endblock %}
+
+
+
+
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,65 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>signin</title>
+    <link rel="preconnect" href="{% static 'https://fonts.googleapis.com' %}">
+    <link rel="preconnect" href="{% static 'https://fonts.gstatic.com' %}" crossorigin>
+    <link href="{% static 'https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap' %}"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{% static '/css/signin.css' %}" />
+</head>
+
+<body>
+    {% block content %}
+  
+    <form action="signin" method="POST">
+        {% csrf_token %}
+        <div class="title">
+            <b> Please fill the details first </b>
+        </div>
+        <hr color="254781">
+        <div>
+            <table class="formtable" width="600">
+                <tr>
+                    <td>* First name:
+                    <td><input name="first_name" required></td>
+                
+                <tr>
+                    <td>* Last name:
+                    <td><input name="last_name" required></td>
+                <tr>
+                    <td>* Email name: </td>
+                    <td><input name="email" type="email" required>
+                <tr>
+                    <td>* User name:
+                    <td><input name="username" required></td>
+                <tr>
+                    <td>* Password:
+                    <td><input name="password1" type=password required></td>
+                <tr>
+                    <td>* Re-enter password:
+                    <td><input name="password2" type=password required></td>
+                
+                    {% if messages %}
+    {% for m in messages %}
+<div class="msg"><tr><td colspan="2">{{m}}</td></tr>
+
+</div>
+     {% endfor %}
+     {% endif %}
+                <tr>
+                    <td colspan="5" align="center"><input id="buton" type="submit" value=submit name="submit"></td>
+            </table>
+        </div>
+    </form>
+   
+    <div class="divp">
+        <p ><a href="{% url 'home' %}">HOME</a></p>
+    </div>
+    {% endblock %}
+</body>
+
+</html>

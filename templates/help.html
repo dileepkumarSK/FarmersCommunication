@@ -1,0 +1,77 @@
+{% load static %}
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>account</title>
+
+    
+    <link rel="stylesheet" type="text/css" href=" {% static '/css/accounts.css' %} ">
+    <link rel="stylesheet" href="{% static 'css/homepagep.css' %}" />
+
+</head>
+
+<body>
+
+
+    {% block content %}
+    {% include 'navhome.html' %}
+    <div class="grid-account">
+
+        {% include 'accountnav.html' %}
+
+        <div>
+
+            <pre>
+Help CenterCommunity
+Google Account
+
+How can we help you?
+Describe your issue
+
+Browse help topics
+Popular articles
+Create a Google Account
+Create a strong password & a more secure account
+Verify your account
+Control what others see about you across Google services
+Someone changed your password
+Be ready to find a lost Android device
+Manage your Location History
+Set up a recovery phone number or email address
+Turn cookies on or off
+How to recover your Google Account or Gmail
+Find & control your Web & App Activity
+Control the ads you see
+Manage your Google Account
+Account recovery
+Account security
+Account privacy
+Fix a problem
+More about Google Accounts
+Learn more about other Google products
+Protect your account
+2-Step Verification
+Add an extra layer of security to your account
+
+Online safety
+Learn how to stay safe and secure online
+
+©2021 Google  Privacy Policy  Terms of Service 
+
+ Send feedback about our Help Center
+Send feedback on...
+
+</pre>
+        </div>
+
+
+
+    </div>
+
+
+    {% endblock %}
+
+</body>
+
+</html>

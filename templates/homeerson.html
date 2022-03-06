@@ -1,0 +1,54 @@
+{% load crispy_forms_tags %}
+<div class="warnings">
+  <marquee behavior="scrool" direction="left">
+    Please update your details if you change you will get new Updates from our website
+  </marquee>
+</div>
+<div class='gridshomerow'>
+
+  <div class="news">
+    <h3>NEWS</h3>
+
+    
+    <marquee behavior="scroll" direction="up" scrollamount="1">
+      <p><a href="">India’s Farmers Call Off Yearlong Protest Against Hated Farm Laws</a></p> <br>
+      <p>
+        <a href="">Farm laws: India farmers end protest after government accepts demands
+        </a></p><br>
+      <p><a href="">Modi backs down after year-long farmer protests</a></p><br>
+      <p><a href="">What did the laws offer?</a></p><br>
+      <p><a href="">Farmers End 15-Month Protest, To Vacate Protest Sites At Delhi Border</a></p><br>
+
+
+
+    </marquee>
+  </div>
+
+  <div class="Events">
+    <img src="/static/imgs/farmers bill.jpg" alt="farmers" width="700" height="300" class="homeimg">
+    <div class="center_grid">
+    <article>
+      The farm bill connects the food on our plates, the farmers and ranchers who produce that food, and the natural resources – our soil, air and water – that make growing food possible.
+    </article>
+    <article>The farm bill is a package of legislation passed roughly once every five years that has a tremendous impact on farming livelihoods, how food is grown, and what kinds of foods are grown. Covering programs ranging from crop insurance for farmers to healthy food access for low-income families, from beginning farmer training to support for sustainable farming practices, the farm bill sets the stage for our food and farm systems. As a leading advocate for family farmers and sustainable agriculture, it’s our job to make sure that this important bill is good for farmers, consumers, and for the natural environment.</article>
+    
+   <article>Every five years, the farm bill expires and is updated: it goes through an extensive process where it is proposed, debated, and passed by Congress and is then signed into law by the President. Each farm bill has a unique title, and the current farm bill is called the Agriculture Improvement Act of 2018. It was enacted into law in December 2018 and expires in 2023.</article>  
+   <article>The original farm bill(s) were enacted in three stages during the 1930s as part of President Franklin Delano Roosevelt’s New Deal legislation. Its three original goals –  to keep food prices fair for farmers and consumers, ensure an adequate food supply, and protect and sustain the country’s vital natural resources – responded to the economic and environmental crises of the Great Depression and the Dust Bowl. While the farm bill has changed in the last 70 years, its primary goals are the same.</article>
+    <article>Our food and farming system confronts new challenges today, but through citizen and stakeholder action for a fair farm bill, we can ensure the vibrancy and productivity of our agriculture, economy, and communities for generations to come.</article>
+  </div>
+  </div>
+  <div class="col-col">
+   <div class=" img-home ">
+    <img src= '{{user.personhomepage.personimage.url}} ' width=100 height=100>
+  </div>
+    <h4> WelCome....{{user.username}} </h4>
+
+    <form action="homepagep" method="POST" enctype="multipart/form-data">
+      {% csrf_token %}
+      {{per|crispy}}
+      <input type="submit" value="Upolad">
+    </form>
+  </div>
+
+
+</div>

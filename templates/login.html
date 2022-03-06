@@ -1,0 +1,45 @@
+{% extends "homepage.html" %}
+
+
+<head>
+    <title>login</title>
+</head>
+<body>
+    
+    {% block content %}
+   
+    
+    
+
+    <section class="divlog">
+         
+
+        <form action="login" method="POST" class="logform">
+            <fieldset>
+            {% csrf_token %}
+            <legend>Login</legend>
+            <h2 class="logh1">FARMERCOMMUNICATON</h2>
+            
+            <p class="username">
+
+                <input type="text" id="usernamei" name="username" placeholder="number , mail id..." />
+            </p>
+            <p class="password">
+
+                <input type="password" id="passwordi" placeholder="password" name="password" />
+            </p>
+            <br>
+            <p class="log_button_class">
+
+                <input type="submit" id="logbuton" name="logbuton" value="LOGIN" />
+            </p>
+            <p><a href="{% url 'reset_password' %}">Forgot password/username ?</a></p>
+            <p>
+                Don't have an account?<a href="{% url 'signin' %}"> Sign up</a>
+            </p>
+        </fieldset>
+        </form>
+    </section>
+    {% endblock %}
+
+</body>
